@@ -17,7 +17,7 @@ export function ProjectProvider({ children, launchContext }: { children: ReactNo
       if (closeOtherWindows) {
         runAppleScriptSync(`
             tell application "System Events"
-              tell process "Cursor"
+              tell process "Windsurf"
                 repeat while window 1 exists
                   click button 1 of window 1
                 end repeat
@@ -25,7 +25,7 @@ export function ProjectProvider({ children, launchContext }: { children: ReactNo
             end tell
             `);
       }
-      await open(uri, "Cursor");
+      await open(uri, "Windsurf");
 
       const { cursorDirectory, callbackLaunchOptions } = launchContext || {};
 

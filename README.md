@@ -1,6 +1,8 @@
-# Cursor
+# Windsurf
 
-Control Cursor directly from Raycast
+> **Note:** This project is a fork of the [Raycast Cursor Extension][raycast-cursor-extension-link], adapted to work with Windsurf instead of Cursor.
+
+Control Windsurf directly from Raycast
 
 [![raycast-cross-extension-badge]][raycast-cross-extension-link]
 
@@ -8,12 +10,12 @@ Control Cursor directly from Raycast
 
 ## What is this extension
 
-- Search Cursor Recent Projects
-- Use `Open With Cursor` command
+- Search Windsurf Recent Projects
+- Use `Open With Windsurf` command
 - Use `Open New Window` command
 - Show Installed Extensions list
 - Search & Install Extension from VSCode Marketplace
-- Reach and search the Cursor Documentation in an instant right from Raycast without any hassle.
+- Reach and search the Windsurf Documentation in an instant right from Raycast without any hassle.
 
 ## API
 
@@ -83,3 +85,4 @@ bun run build
 
 [raycast-cross-extension-badge]: https://shields.io/badge/Raycast-Cross--Extension-eee?labelColor=FF6363&logo=raycast&logoColor=fff&style=flat-square
 [raycast-cross-extension-link]: https://github.com/LitoMore/raycast-cross-extension-conventions
+[raycast-cursor-extension-link]: https://github.com/raycast/extensions/tree/main/extensions/cursor-recent-projects

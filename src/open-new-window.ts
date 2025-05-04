@@ -3,16 +3,16 @@ import { runAppleScript } from "@raycast/utils";
 
 const makeNewWindow = async () => {
   await runAppleScript(`
-    tell application "Cursor"
+    tell application "Windsurf"
 	    activate
     end tell
     delay(0.5)
-    tell application "Cursor"
+    tell application "Windsurf"
 	    activate
     end tell
 
     tell application "System Events"
-	    tell process "Cursor"
+	    tell process "Windsurf"
 		    click menu item "New Window" of menu "File" of menu bar 1
 	    end tell
     end tell

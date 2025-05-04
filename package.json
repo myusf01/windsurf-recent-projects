@@ -1,15 +1,17 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "cursor-recent-projects",
-  "title": "Cursor",
-  "description": "Control Cursor, Cursor & Codium directly from Raycast - Search and open recent projects, handle extensions and commands.",
-  "icon": "cursor-icon.png",
-  "author": "degouville",
+  "name": "windsurf-recent-projects",
+  "title": "Windsurf",
+  "description": "Control Windsurf directly from Raycast - Search and open recent projects, handle extensions and commands.",
+  "icon": "windsurf-icon.png",
+  "author": "muhammed_yusuf",
   "contributors": [
     "pernielsentikaer",
     "escwxyz",
     "litomore",
-    "michalzuch"
+    "michalzuch",
+    "degouville",
+    "muhammed_yusuf"
   ],
   "categories": [
     "Applications",
@@ -17,7 +19,7 @@
     "Productivity"
   ],
   "keywords": [
-    "cursor",
+    "windsurf",
     "vscode",
     "claude",
     "sonnet",
@@ -30,22 +32,22 @@
     {
       "name": "index",
       "title": "Search Recent Projects",
-      "subtitle": "Cursor",
-      "description": "Search and open recent projects from Cursor.",
+      "subtitle": "Windsurf",
+      "description": "Search and open recent projects from Windsurf.",
       "mode": "view"
     },
     {
-      "name": "open-with-cursor",
-      "title": "Open with Cursor",
-      "subtitle": "Cursor",
-      "description": "Opens the currently selected Finder item with Cursor.",
+      "name": "open-with-windsurf",
+      "title": "Open with Windsurf",
+      "subtitle": "Windsurf",
+      "description": "Opens the currently selected Finder item with Windsurf.",
       "mode": "no-view"
     },
     {
       "name": "open-new-window",
       "title": "Open New Window",
-      "subtitle": "Cursor",
-      "description": "Opens a new Cursor window.",
+      "subtitle": "Windsurf",
+      "description": "Opens a new Windsurf window.",
       "mode": "no-view"
     },
     {
@@ -57,7 +59,7 @@
     {
       "name": "install-extension",
       "title": "Install Extension",
-      "description": "Install Extensions from the Cursor Marketplace",
+      "description": "Install Extensions from the Windsurf Marketplace",
       "mode": "view"
     }
   ],
@@ -94,9 +96,9 @@
       "type": "checkbox",
       "title": "Usability",
       "required": false,
-      "label": "Close Other Cursor Windows",
+      "label": "Close Other Windsurf Windows",
       "default": false,
-      "description": "Close other Cursor windows when opening a project"
+      "description": "Close other Windsurf windows when opening a project"
     },
     {
       "name": "terminalApp",

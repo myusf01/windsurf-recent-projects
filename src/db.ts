@@ -42,7 +42,7 @@ export function useRecentEntries() {
     try {
       await saveEntries(parsedEntries.filter((currentEntry) => !isSameEntry(currentEntry, entry)));
       await revalidate();
-      showToast(Toast.Style.Success, "Entry removed", `Restart Cursor to sync the list in Cursor (optional)`);
+      showToast(Toast.Style.Success, "Entry removed", `Restart Windsurf to sync the list in Windsurf (optional)`);
     } catch (error) {
       showToast(Toast.Style.Failure, "Failed to remove entry");
     }
@@ -67,7 +67,7 @@ export function useRecentEntries() {
       ) {
         await saveEntries([]);
         await revalidate();
-        showToast(Toast.Style.Success, "All entries removed", `Restart Cursor to sync the list in Cursor (optional)`);
+        showToast(Toast.Style.Success, "All entries removed", `Restart Windsurf to sync the list in Windsurf (optional)`);
       }
     } catch (error) {
       showToast(Toast.Style.Failure, "Failed to remove entries");
@@ -78,7 +78,7 @@ export function useRecentEntries() {
 }
 
 function getPath() {
-  return `${homedir()}/Library/Application Support/Cursor/User/globalStorage/state.vscdb`;
+  return `${homedir()}/Library/Application Support/Windsurf/User/globalStorage/state.vscdb`;
 }
 
 async function saveEntries(entries: EntryLike[]) {

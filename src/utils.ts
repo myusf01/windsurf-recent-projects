@@ -151,7 +151,7 @@ export async function waitForFileExists(filename: string, timeoutMs = 2000) {
 }
 
 export function raycastForCursorURI(uri: string) {
-  return `cursor://tonka3000.raycast/${uri}`;
+  return `windsurf://tonka3000.raycast/${uri}`;
 }
 
 export async function openURIinCursor(uri: string) {

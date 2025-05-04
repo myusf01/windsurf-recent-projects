@@ -73,11 +73,11 @@ export function OpenExtensionByIDInCursorAction(props: {
 }): JSX.Element {
   return (
     <Action.OpenInBrowser
-      title="Open in Cursor"
-      url={`cursor:extension/${props.extensionID}`}
+      title="Open in Windsurf"
+      url={`windsurf:extension/${props.extensionID}`}
       icon={"icon.png"}
       onOpen={(url) => {
-        showHUD("Open Cursor Extension");
+        showHUD("Open Windsurf Extension");
         if (props.onOpen) {
           props.onOpen(url);
         }
@@ -94,7 +94,7 @@ export function OpenExtensionByIDInBrowserAction(props: { extensionID: string })
       url={url}
       shortcut={{ modifiers: ["cmd"], key: "b" }}
       onOpen={() => {
-        showHUD("Open Cursor Extension in Browser");
+        showHUD("Open Windsurf Extension in Browser");
       }}
     />
   );

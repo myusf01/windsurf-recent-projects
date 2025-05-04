@@ -5,7 +5,7 @@ import { CursorDirectoryContext } from "./types";
 
 // Ensure that the .cursorrules file exists in the project directory
 async function ensureCursorRulesFile(projectPath: string): Promise<void> {
-  const cursorRulesPath = path.join(projectPath, ".cursorrules");
+  const cursorRulesPath = path.join(projectPath, ".windsurfrules");
   try {
     await fs.access(cursorRulesPath);
   } catch {
@@ -15,7 +15,7 @@ async function ensureCursorRulesFile(projectPath: string): Promise<void> {
 
 // Apply a cursor rule to the project, integrating with escwxyz/cursor-directory
 async function applyCursorRule(projectPath: string, ruleContent: string, replace: boolean): Promise<void> {
-  const cursorRulesPath = path.join(projectPath, ".cursorrules");
+  const cursorRulesPath = path.join(projectPath, ".windsurfrules");
 
   if (replace) {
     await fs.writeFile(cursorRulesPath, ruleContent);

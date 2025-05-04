@@ -33,10 +33,10 @@ export default async function main() {
     if (selectedItems.length === 0) {
       const currentPath = await getCurrentFinderPath();
       if (currentPath.length === 0) throw new Error("Not a valid directory");
-      await open(currentPath, "Cursor");
+      await open(currentPath, "Windsurf");
     } else {
       for (const item of selectedItems) {
-        await open(item.path, "Cursor");
+        await open(item.path, "Windsurf");
       }
     }
 

@@ -152,7 +152,7 @@ function LocalItem(props: { entry: EntryLike; uri: string; pinned?: boolean } & 
   }, [path, name]);
 
   const getTitle = (revert = false) => {
-    return `Open in Cursor ${closeOtherWindows !== revert ? "and Close Other" : ""}`;
+    return `Open in Windsurf ${closeOtherWindows !== revert ? "and Close Other" : ""}`;
   };
 
   const { openProject } = useProject();
@@ -239,10 +239,10 @@ function RemoteItem(
 ) {
   const remotePath = decodeURI(basename(props.uri));
 
-  const uri = props.uri.replace("vscode-remote://", "cursor://vscode-remote/");
+  const uri = props.uri.replace("vscode-remote://", "windsurf://vscode-remote/");
 
   const getTitle = (revert = false) => {
-    return `Open in Cursor ${closeOtherWindows !== revert ? "and Close Other" : ""}`;
+    return `Open in Windsurf ${closeOtherWindows !== revert ? "and Close Other" : ""}`;
   };
 
   const getUrl = (uri: string, revert = false) => {
