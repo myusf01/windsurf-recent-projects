@@ -67,7 +67,11 @@ export function useRecentEntries() {
       ) {
         await saveEntries([]);
         await revalidate();
-        showToast(Toast.Style.Success, "All entries removed", `Restart Windsurf to sync the list in Windsurf (optional)`);
+        showToast(
+          Toast.Style.Success,
+          "All entries removed",
+          `Restart Windsurf to sync the list in Windsurf (optional)`
+        );
       }
     } catch (error) {
       showToast(Toast.Style.Failure, "Failed to remove entries");
