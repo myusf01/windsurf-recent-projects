@@ -1,6 +1,8 @@
 # Windsurf
 
-> **Note:** This project is a fork of the [Raycast Cursor Extension][raycast-cursor-extension-link], adapted to work with Windsurf instead of Cursor.
+
+> [!WARNING]
+> ## **Note:** This project is a fork of the [Raycast Cursor Extension][raycast-cursor-extension-link], adapted to work with Windsurf instead of Cursor.
 
 Control Windsurf directly from Raycast
 
